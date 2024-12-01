@@ -24,21 +24,37 @@ import colorsharpRight from '../assets/images/color-sharp-right.png'
 
 import wave from '../assets/images/wave.svg'
 
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
+
 export const Skills = () => {
 
 
+
+  useEffect(()=>{
+
+    AOS.init();
+
+  },[]);
     return (
-        
-    <section className="skill" id="skills">
+      
+    <section className="skill" id="skills" >
                 {/* <img style={{position:'absolute', top:'-135px', zIndex:'' }} src={wave} alt="Image" /> */}
 
         <Container>
+        
           <Row>
-            <div className="skill-bx">
+            <div className="skill-bx" data-aos="fade-up">
             <h2>Skills</h2>
             {/* <p>Here are some of the skills I have acquired over the years</p> */}
               <Col sm={12} md={12} lg={12}>
-                  <div className='cards'>
+            
+                  <div className='cards' data-aos="fade-right">
                       <Card className='card' >
                         <Card.Img  src={html} />
                         <span className="tooltiptext">HTML</span>
@@ -74,11 +90,13 @@ export const Skills = () => {
 
                       </Card>     
                     </div> 
+                    
                 
               </Col>
               <Col sm={12} md={12} lg={12}>
+              
                 
-                  <div className='cards'>
+                  <div className='cards' data-aos="fade-left">
                       <Card className='card' >
                         <Card.Img  src={mongodb} />
                         <span className="tooltiptext">Mongodb</span>
@@ -110,12 +128,13 @@ export const Skills = () => {
 
                       </Card>       
                     </div> 
-               
+                
               </Col>
               
               </div>
               
           </Row>
+          
 
                      
         </Container>
@@ -126,7 +145,7 @@ export const Skills = () => {
 
         
     </section>
-
+    
 
 
         )

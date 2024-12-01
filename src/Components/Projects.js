@@ -3,54 +3,75 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import TabPane from 'react-bootstrap/TabPane';
 
-import projImg1 from '../assets/images/projImg1.svg';
-import projImg2 from '../assets/images/projImg2.svg';
-import projImg3 from '../assets/images/projImg3.svg';
+import projImg1 from '../assets/images/maktabatitest.png';
+import projImg2 from '../assets/images/deo.png';
+import projImg3 from '../assets/images/TimeManager.png';
 
-
+import { useEffect } from "react";
 import {ProjectCard} from './ProjectCard.js';
 
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export const Projects = () => {
+
+    
+  useEffect(()=>{
+
+    AOS.init();
+
+  },[]);
 
     const projects = [
 
         {
-            title:"1",
-            description:"description",
+            title:"Maktabati",
+            description:"Maktabati is a web application designed for bookholics to explore and discover a variety of books.",
             imgUrl:projImg1,
         },
         {
-            title:"2",
-            description:"description",
+            title:"DataMaster",
+            description:"DataMaster is a web application designed for managing and analyzing data, featuring an integrated NLP model for query generation",
             imgUrl:projImg2,
         },
         {
-            title:"3",
-            description:"description",
+            title:"Time Manager",
+            description:"Time-Manager is a web application designed to manage the working hours of employees in a company",
             imgUrl:projImg3,
         },
     ];
 
     return (
 
-    <section className="project" id="projects">
+        
+    
+    <section className="project" id="projects" >
+        
+        
         <Container>
-
+        
+        
             <Row>
                 <Col>
-                    
+               
+                
+                 <div data-aos="fade-up">
                     <h2>Projects</h2>
-                    <p>Lorem Ipsum</p>
-
+                    <p>Here are a few projects I've worked on, showcasing my skills and creativity.</p>
+                
+                    </div>
                     <Tab.Container defaultActiveKey="First" transition={false} id="projects-tabs">
-                        <Nav className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                            <Nav.Item>
+                        <Nav className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab" data-aos="fade-up">
+                            <Nav.Item >
                                 <Nav.Link eventKey="First">Tab 1</Nav.Link>
                             </Nav.Item>
                         </Nav>
 
                         <Tab.Content>
-                            <Tab.Pane eventKey="First">
+                            <Tab.Pane eventKey="First" data-aos="zoom-in">
 
                                 <Row>
                                     {
@@ -73,18 +94,19 @@ export const Projects = () => {
                         </Tab.Content>
 
                        
-                    </Tab.Container>
+                        </Tab.Container>
+                    
                 </Col>
 
             </Row>
-
+           
+           
         </Container>
 
-
-    
-
-
+        
+        
     </section>
+   
 
 )
 }
