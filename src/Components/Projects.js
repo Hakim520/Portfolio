@@ -1,7 +1,6 @@
 import {Container, Row, Col, Nav} from "react-bootstrap";
 import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
-import TabPane from 'react-bootstrap/TabPane';
+
 
 import projImg1 from '../assets/images/maktabatitest.png';
 import projImg2 from '../assets/images/deo.png';
@@ -11,7 +10,7 @@ import { useEffect } from "react";
 import {ProjectCard} from './ProjectCard.js';
 
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

@@ -19,16 +19,12 @@ import docker from '../assets/images/docker.svg'
 import figma from '../assets/images/figma.svg'
 
 
-import colorsharp from '../assets/images/color-sharp_test.png'
-import colorsharpRight from '../assets/images/color-sharp-right.png'
-
-import wave from '../assets/images/wave.svg'
 
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
 
 

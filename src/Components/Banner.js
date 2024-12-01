@@ -1,11 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import navIcon1 from '../assets/images/nav-icon1.svg';
 import navIcon2 from '../assets/images/nav-icon2.svg';
-import header from '../assets/images/header-img.svg'
 import test from '../assets/images/banner1.svg'
 
 import { FileEarmarkArrowDown } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
+
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
