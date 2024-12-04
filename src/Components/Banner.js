@@ -1,7 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
 import navIcon1 from '../assets/images/nav-icon1.svg';
 import navIcon2 from '../assets/images/nav-icon2.svg';
-import test from '../assets/images/banner1.svg'
+import test from '../assets/images/banner1.svg';
+import pdf from '../assets/cv/CV_KADEM.pdf';
+
 
 import { FileEarmarkArrowDown } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
@@ -70,8 +72,9 @@ export const Banner = () =>
                                     <a href="https://github.com/Hakim520" target="_blank"><img src={navIcon2} alt="image" /></a>
                                     
                                 </div>
-                            
-                                    <button className="vvd"><span>Download CV <FileEarmarkArrowDown size={25} className="icon-right"/> </span></button>
+                                {/* // ../assets/cv/CV_KADEM.pdf
+                                // download="CV_KADEM.pdf"  */}
+                                    <button className="vvd"  onClick={()=>{const link = document.createElement('a');  link.href = pdf ; link.download = 'CV_KADEM.pdf'; link.click();}}><span>Download CV <FileEarmarkArrowDown size={25} className="icon-right"/> </span></button>
                             
                             </span>
                         </div>}
