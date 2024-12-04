@@ -36,7 +36,7 @@ export const Contact = () => {
     const handleSubmit = async(e) =>{
         e.preventDefault();
         setButtonText('Sending ...');
-        let response = await fetch("http://localhost:3000/contact",{
+        let response = await fetch("https://portfolio-pg9z.onrender.com/contact",{
             method:"POST",
             headers:
                 {

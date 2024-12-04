@@ -9,7 +9,13 @@ const appPass = process.env.APP_PASSWORD;
 
 // server used to send send emails
 const app = express();
-app.use(cors());
+app.use(cors(
+  {
+    origin: "http://localhost:3000/Portfolio", 
+    methods: ["POST"],
+    allowedHeaders: ["Content-Type"],
+  }
+));
 app.use(express.json());
 app.use("/", router);
 app.listen(3000, () => console.log("Server Running"));
