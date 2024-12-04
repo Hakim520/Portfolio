@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.f828430d.css",
-    "main.js": "/Portfolio/static/js/main.55bd4f26.js",
+    "main.js": "/Portfolio/static/js/main.d328fa87.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/banner1.svg": "/Portfolio/static/media/banner1.de06be403595b41d4059abdad6bd7906.svg",
     "static/media/CV_KADEM.pdf": "/Portfolio/static/media/CV_KADEM.9bb0a596dee0dcfbd0eb.pdf",
@@ -29,11 +29,11 @@
     "static/media/css.svg": "/Portfolio/static/media/css.315b8fdb9dbf75ae965b80bf368895cd.svg",
     "static/media/html.svg": "/Portfolio/static/media/html.0107c93943a8f415b5db64ebb0a9d12d.svg",
     "main.f828430d.css.map": "/Portfolio/static/css/main.f828430d.css.map",
-    "main.55bd4f26.js.map": "/Portfolio/static/js/main.55bd4f26.js.map",
+    "main.d328fa87.js.map": "/Portfolio/static/js/main.d328fa87.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f828430d.css",
-    "static/js/main.55bd4f26.js"
+    "static/js/main.d328fa87.js"
   ]
 }
