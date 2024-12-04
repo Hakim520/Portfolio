@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './assets/images/logo1.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavBar} from './Components/NavBar.js';
@@ -8,13 +8,17 @@ import {Projects} from './Components/Projects.js';
 import {Contact} from './Components/Contact.js';
 import {Footer} from './Components/Footer.js';
 import {createBrowserRouter} from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 // const router = createBrowserRouter([]);
 
 function App() {
   return (
+    
     <div className="App">
-
+       <Helmet>
+        <title>Portfolio</title>
+      </Helmet>
 
       <NavBar />
       <Banner />
