@@ -11,7 +11,7 @@ const appPass = process.env.APP_PASSWORD;
 const app = express();
 app.use(cors(
   {
-    origin: "http://localhost:3000/Portfolio", 
+    origin: "https://hakim520.github.io/Portfolio/", 
     methods: ["POST"],
     allowedHeaders: ["Content-Type"],
   }
