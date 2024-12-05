@@ -18,7 +18,8 @@ app.use(cors(
 ));
 app.use(express.json());
 app.use("/", router);
-app.listen(3000, () => console.log("Server Running"));
+// app.listen(3000, () => 
+console.log("Server Running");
 
 
 const contactEmail = nodemailer.createTransport({
@@ -54,8 +55,10 @@ router.post("/contact", (req, res) => {
   contactEmail.sendMail(mail, (error) => {
     if (error) {
       res.json(error);
+      console.log("Message not sent, there's an error somewhere");
     } else {
       res.json({ code: 200, status: "Message Sent" });
+      console.log("Message sent");
     }
   });
 });
