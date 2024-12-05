@@ -11,7 +11,7 @@ const appPass = process.env.APP_PASSWORD;
 const app = express();
 app.use(cors(
   {
-    origin: "https://hakim520.github.io/Portfolio/", 
+    origin: "https://hakim520.github.io", 
     methods: ["POST"],
     allowedHeaders: ["Content-Type"],
   }
@@ -41,6 +41,7 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", (req, res) => {
+  console.log("Request received:", req.body); 
   const name = req.body.first_name + req.body.last_name;
   const email = req.body.email;
   const message = req.body.message;
