@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.f828430d.css",
-    "main.js": "/Portfolio/static/js/main.a7ea91b0.js",
+    "main.js": "/Portfolio/static/js/main.0d8302b5.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/banner1.svg": "/Portfolio/static/media/banner1.de06be403595b41d4059abdad6bd7906.svg",
-    "static/media/CV_KADEM.pdf": "/Portfolio/static/media/CV_KADEM.bb1d4c74e21f06fda1ba.pdf",
+    "static/media/CV_KADEM.pdf": "/Portfolio/static/media/CV_KADEM.d9d168091a11777616f9.pdf",
     "static/media/maktabatitest.png": "/Portfolio/static/media/maktabatitest.d8780a04c63a9a75f8d4.png",
     "static/media/deo.png": "/Portfolio/static/media/deo.84e8eaf7f2e723789727.png",
     "static/media/CentraNo2-Bold.ttf": "/Portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
@@ -29,11 +29,11 @@
     "static/media/css.svg": "/Portfolio/static/media/css.315b8fdb9dbf75ae965b80bf368895cd.svg",
     "static/media/html.svg": "/Portfolio/static/media/html.0107c93943a8f415b5db64ebb0a9d12d.svg",
     "main.f828430d.css.map": "/Portfolio/static/css/main.f828430d.css.map",
-    "main.a7ea91b0.js.map": "/Portfolio/static/js/main.a7ea91b0.js.map",
+    "main.0d8302b5.js.map": "/Portfolio/static/js/main.0d8302b5.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f828430d.css",
-    "static/js/main.a7ea91b0.js"
+    "static/js/main.0d8302b5.js"
   ]
 }
