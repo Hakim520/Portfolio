@@ -65,7 +65,7 @@ export const Banner = () =>
                      <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                             <span className="tagline">Welcome to my Portfolio</span>
                             <h1>{"Hi, I'm Hakim"} <span className="wrap">{text}</span></h1>
-                            <p>Polyglot and Technology Enthusiast, I am an AI student with strong expertise in <span className="description"> Web development</span>.</p>
+                            <p>Polyglot and Technology Enthusiast, I am an <span className="description"> AI student </span> with strong expertise in <span className="description"> Web development</span>.</p>
                             <span className="navbar-text">
                                 <div className="social-icon">
                                     <a href="https://linkedin.com/in/hakim-kadem-b42109241" target="_blank"><img src={navIcon1} alt="image" /></a>
